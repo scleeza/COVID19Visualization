@@ -12,7 +12,7 @@ import streamlit as st
 import warnings
 
 warnings.filterwarnings("ignore")
-locale.setlocale(locale.LC_ALL, 'en_US')
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 register_matplotlib_converters()
 
 # URL for fetching data
