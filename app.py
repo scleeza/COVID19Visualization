@@ -151,7 +151,7 @@ def draw_trend(df, show_global,model, num_obv=50):
 
 class arima():
     """ARIMA class object"""
-    def __init__(self, df, col_name, latest_date, obs_num,order=(10, 1, 0), pred_num=30, train_num=200):
+    def __init__(self, df, col_name, latest_date, obs_num,order=(1,2,1), pred_num=30, train_num=200):
         self.df = df
         self.col = col_name
         self.series = df[col_name]
