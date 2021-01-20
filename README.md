@@ -5,11 +5,11 @@
 https://share.streamlit.io/scleeza/covid19visualization/app.py 
 
 *Local run*
-1. Clone repo to local doc
-2. ```powershell
+Clone repo to local doc
+```powershell
 pip install -r requirements.txt 
 ```
-3.```powershell
+```powershell
 streamlit run app.py
 ```
 
