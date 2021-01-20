@@ -5,6 +5,7 @@
 https://share.streamlit.io/scleeza/covid19visualization/app.py 
 
 *Local run*
+
 Clone repo to local doc
 ```powershell
 pip install -r requirements.txt 
