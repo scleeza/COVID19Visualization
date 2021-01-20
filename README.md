@@ -5,7 +5,7 @@
 https://share.streamlit.io/scleeza/covid19visualization/app.py 
 
 *Local run*
-1. 
+1. \
 Clone repo to local doc
 2. 
 ```powershell
