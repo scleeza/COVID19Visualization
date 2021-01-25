@@ -54,7 +54,7 @@ def main():
         # '''
         # Load models and scaler
         tf_models = load_tf_models()
-        tf_scaler = load(open("model_confirm_case/scaler.pkl","rb"))
+        tf_scaler = load(open("scaler.pkl","rb"))
         st.sidebar.subheader("DL Models")
         model_select = st.sidebar.multiselect("Select models:",list(tf_models.keys()),default=list(tf_models.keys()))
         # trim data and standardization into tensor format
