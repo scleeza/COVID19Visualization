@@ -267,7 +267,7 @@ def load_tf_models():
     #           'Conv': tf.keras.models.load_model("model_confirm_case/Conv_model"),
     #           'RNN': tf.keras.models.load_model("model_confirm_case/RNN_model"),
     #           'LSTM': tf.keras.models.load_model("model_confirm_case/LSTM_model")}
-    models ={'LSTM': tf.keras.models.load_model("model_confirm_case/LSTM_model")}
+    models ={'LSTM': tf.keras.models.load_model("lstm_model.h5")}
     return models
 
 
