@@ -8,7 +8,11 @@ Streamlit gives limites RAM for free user, ARIMA model may not able to calculate
 
 *Local run*
 
+1.
+
 Clone repo to local doc
+
+2.
 ```powershell
 pip install -r requirements.txt 
 ```
