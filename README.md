@@ -4,7 +4,7 @@
 
 https://share.streamlit.io/scleeza/covid19visualization/app.py 
 
-Streamlit gives limites RAM for free user, ARIMA model may not able to calculate in unsufficient RAM
+Streamlit only gave 800MB RAM for free user, so ARIMA model may not be able to calculate when it was on deploy mode
 
 *Local run*
 
