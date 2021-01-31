@@ -56,7 +56,7 @@ def main():
         # '''
         # Load models and scaler
         tf_models = load_tf_models()
-        tf_scaler = [load(open("scaler.pkl","rb")),load(open("scaler_d.pkl","rb"))]
+        tf_scaler = [load(open("_models/scaler.pkl","rb")),load(open("_models/scaler_d.pkl","rb"))]
         st.sidebar.subheader("LSTM Result")
         # #model_select = st.sidebar.multiselect("Select models:",list(tf_models.keys()),default=list(tf_models.keys()))
         lstm_select = st.sidebar.checkbox('Show LSTM Prediction',value=True)
@@ -228,7 +228,7 @@ class arima():
         self.pred_num = pred_num
         self.train_num = train_num
         self.lstm_pred = lstm_pred
-        best_cfg = load(open('arima_order.pkl', 'rb'))
+        best_cfg = load(open('_models/arima_order.pkl', 'rb'))
         try:
             order = best_cfg[col_name]
         except:
@@ -327,8 +327,8 @@ def load_tf_models():
     #           'Conv': tf.keras.models.load_model("model_confirm_case/Conv_model"),
     #           'RNN': tf.keras.models.load_model("model_confirm_case/RNN_model"),
     #           'LSTM': tf.keras.models.load_model("model_confirm_case/LSTM_model")}
-    models ={'LSTM': [tf.keras.models.load_model("lstm_model.h5"),
-                      tf.keras.models.load_model("lstm_model_d.h5")]}
+    models ={'LSTM': [tf.keras.models.load_model("_models/lstm_model.h5"),
+                      tf.keras.models.load_model("_models/lstm_model_d.h5")]}
     return models
 
 

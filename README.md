@@ -1,25 +1,67 @@
-# COVID19Visualization
+# COVID19 Case Prediction and Visualization
 
-**ARIMA prediction dashboard**
+ [Dash board version](https://share.streamlit.io/scleeza/covid19visualization/app.py)  made by streamlit
 
-https://share.streamlit.io/scleeza/covid19visualization/app.py 
+   >Streamlit only gave 800MB RAM for free user, so sometimes model calculation may encounter error due to lack of memory.
 
-Streamlit only gave 800MB RAM for free user, so ARIMA model may not be able to calculate when it was on deploy mode
+- **Local run**
 
-*Local run*
+    1. Clone repository to local doc
+    
+    2. Intall all the dependencies
+        ```powershell
+        pip install -r requirements.txt 
+        ```
+    3. Run streamlit app
+        ```powershell
+        streamlit run app.py
+        ```
+## Build ARIMA models
 
-Clone repo to local doc
+*ARIMA moodel training notebook.* [JupyterNoteBook](https://github.com/scleeza/COVID19Visualization/blob/master/arima.ipynb)
 
+-  this notebook have
+    1. Used differentiate method to get stationary data
+    
+        ![result](_images/diff.png)
+        
+    2. Stationarity test through Augmented Dickey-Muller statistics.
+    3. Chose hyperparameter (p,d,q) through Auto Correlation Function and Partial Correlation Function.
+    
+        ![acfpacf](_images/acf.png)
+        
+    3. evaluate best ARIMA hyperparameters setting by **Grid Search**
+    
+        ![trend](_images/trend.png)
 
-```powershell
-pip install -r requirements.txt 
-```
+## Build Neuron Network models
 
+*NN models including DNN,CNN,RNN,LSTM*
 
-```powershell
-streamlit run app.py
-```
+Process of training models puts in [Jupyter Notebook]()
 
-*ARIMA moodel training notebook*
+- this notebook have
+    1. How to generate time series tensor data, basically I use past 30 days data to predict future 30 days.
+    2. Built connection layer to deal with time series data when using DNN and CNN model.
+    3. Compared MSE of each models
+    
+        ![model_compare](_images/models_comparsion.png)
+    
+## Pros and Cons between two methods  
 
-https://github.com/scleeza/COVID19Visualization/blob/master/arima.ipynb
+This table show each model on predicting case number in next 30 days, and NN models especially RNN/LSTM outperform others in large scale.
+
+![Comparsion](_images/Top20.png)
+
+- ARIMA
+
+    Pros
+    1. Its more interpretable, since it is basically a kind of linear models. 
+    2. Easy to set up
+    
+    Cos
+    1. Not efficient when generating multiple outputs, e.g. each country requires a specific model.
+    2. Can use other features.
+    
+- NN
+    basically is opposite of ARIMA model, except it provides more accurace result.
