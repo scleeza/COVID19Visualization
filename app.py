@@ -6,7 +6,6 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from datetime import datetime
 import datetime as dt
 import sklearn
-
 import altair as alt
 from statsmodels.tsa.arima_model import ARIMA
 from statsmodels.tsa.arima_model import ARIMAResults
