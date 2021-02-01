@@ -1,7 +1,7 @@
 # COVID19 Case Prediction and Visualization
 
  
-## [Dash board version](https://share.streamlit.io/scleeza/covid19visualization/app.py)  
+## [Dash board](https://share.streamlit.io/scleeza/covid19visualization/app.py)  
 
 *made by streamlit*
 
