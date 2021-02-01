@@ -44,15 +44,17 @@
 Process of training models puts in [Jupyter Notebook](https://github.com/scleeza/COVID19Visualization/blob/master/rnn_final.ipynb)
 
 - this notebook have
-    1. How to generate time series tensor data, basically I use past 30 days data to predict future 30 days.
-    2. Built connection layer to deal with time series data when using DNN and CNN model.
-    3. Compared MSE of each models
+    1. How to generate time series tensor data, basically I use past 30 days data to predict cases in next 30 days.
+    2. A train-in-once model, which generate all countries' next 30 days prediction .
+    3. Built connectinng layer to deal with time series data when using DNN and CNN model.
+    4. Hyperparameter tuning.
+    5. Compared MSE of each models
     
         ![model_compare](_images/models_comparsion.png)
     
 ## Pros and Cons between two methods  
 
-This table show each model on predicting case number in next 30 days, and NN models especially RNN/LSTM outperform others in large scale.
+This table show RMSE of each model's prediction in next 30 days, and NN models especially RNN/LSTM outperform others in large scale.
 
 ![Comparsion](_images/Top20.png)
 
@@ -61,10 +63,11 @@ This table show each model on predicting case number in next 30 days, and NN mod
     Pros
     1. Its more interpretable, since it is basically a kind of linear models. 
     2. Easy to set up
+    3. Accurate when data is able find stationary state.
     
     Cos
-    1. Not efficient when generating multiple outputs, e.g. each country requires a specific model.
-    2. Can use other features.
+    1. Not efficient when generating multiple outputs, e.g. each country requires its specific model.
+    2. Can't use other features.
     
 - NN
-    basically is opposite of ARIMA model, except it provides more accurace result.
+    basically is opposite to ARIMA model, except it provides more accurace result.
