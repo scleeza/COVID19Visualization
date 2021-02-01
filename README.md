@@ -38,7 +38,7 @@
 
 *NN models including DNN,CNN,RNN,LSTM*
 
-Process of training models puts in [Jupyter Notebook]()
+Process of training models puts in [Jupyter Notebook](https://github.com/scleeza/COVID19Visualization/blob/master/rnn_final.ipynb)
 
 - this notebook have
     1. How to generate time series tensor data, basically I use past 30 days data to predict future 30 days.
