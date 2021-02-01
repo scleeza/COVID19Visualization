@@ -1,7 +1,7 @@
 # COVID19 Case Prediction and Visualization
 
  
- ##[Dash board version](https://share.streamlit.io/scleeza/covid19visualization/app.py)  made by streamlit
+ ## [Dash board version](https://share.streamlit.io/scleeza/covid19visualization/app.py)  made by streamlit
 
    >Streamlit only gave 800MB RAM for free user, so sometimes model calculation may encounter error due to lack of memory.
 
