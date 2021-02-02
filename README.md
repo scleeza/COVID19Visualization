@@ -1,6 +1,9 @@
 # COVID19 Case Prediction and Visualization
 
- 
+## Overview
+
+Trained models  to predict covid-19 case using traditional ARIMA model and deep learning models including DNN, CNN, RNN, LSTM, cross-validate performance and showcase on web app built by streamlit.
+
 ## [Dash board](https://share.streamlit.io/scleeza/covid19visualization/app.py)  
 
 *made by streamlit*
