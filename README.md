@@ -1,9 +1,12 @@
 # COVID19 Case Prediction and Visualization
 
- 
-## [Dash board version](https://share.streamlit.io/scleeza/covid19visualization/app.py)  
+## Overview
 
-*made by streamlit*
+Trained models  to predict covid-19 case using traditional ARIMA model and deep learning models including DNN, CNN, RNN, LSTM, cross-validate performance and showcase on web app built by streamlit.
+
+## Dashboard
+
+ARIMA and LSTM models are embedded into [Streamlit Dash Board](https://share.streamlit.io/scleeza/covid19visualization/app.py)
 
    >Streamlit only gave 800MB RAM for free user, so sometimes model calculation may encounter error due to lack of memory.
 
