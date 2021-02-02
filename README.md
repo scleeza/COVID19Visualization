@@ -6,7 +6,7 @@ Trained models  to predict covid-19 case using traditional ARIMA model and deep 
 
 ## Dashboard
 
-[Streamlit](https://share.streamlit.io/scleeza/covid19visualization/app.py)
+ARIMA and LSTM models are embedded into [Streamlit Dash Board](https://share.streamlit.io/scleeza/covid19visualization/app.py)
 
    >Streamlit only gave 800MB RAM for free user, so sometimes model calculation may encounter error due to lack of memory.
 
